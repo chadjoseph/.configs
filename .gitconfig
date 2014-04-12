@@ -1,0 +1,48 @@
+[alias]
+  a = add
+  aa = add .
+  ap = add --patch
+  b = branch
+  bd = branch -D
+  bm = branch -m
+  c = checkout
+  ca = commit --amend
+  cane = commit --amend --no-edit
+  cb = checkout -b
+  cl = checkout -
+  cm = commit --message
+  d = diff
+  dc = diff --cached
+  dno = diff --name-only
+  fa = fetch --all
+  lgo = log --graph --oneline
+  ma = merge --abort
+  mlnenff = merge - --no-edit --no-ff
+  mlnenffxt = merge - --no-edit --no-ff -X theirs
+  poggf = push origin gh-pages:gh-pages --force
+  poh = push origin HEAD
+  pohf = push origin HEAD --force
+  pom = push origin master
+  pomf = push origin master --force
+  puoh = push --set-upstream origin HEAD
+  rao = remote add origin
+  rc = rebase --continue
+  rh = reset --hard
+  rhc = reset HEAD^
+  rh1 = reset head~1
+  rhom = reset --hard origin/master
+  ri = rebase --interactive
+  rl = rebase -
+  rv = remote --verbose
+  s = status
+  sp = stash pop
+  ssppbg = subtree split --prefix public -b gh-pages
+  t = tag
+[color]
+  ui = true
+[credential]
+  helper = !aws codecommit credential-helper $@
+  UseHttpPath = true
+[user]
+  name = Chad Joseph Brown
+  email = chad@chadjoseph.com
